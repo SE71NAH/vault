@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confidential Archive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot">🎭</div><div>Confidential Archive</div></div>
+      <div class="mini-actions">
+        <a class="link-btn" href="level1.html">Back</a>
+      </div>
+    </div>
+
+    <section class="hero-card">
+      <span class="eyebrow">Stage 2</span>
+      <h1 class="title">Confidential<br>Archive</h1>
+      <p class="sub">You are deeper in. This archive is Shakespeare-themed. Take the clue, then enter a <strong>new password</strong> to open the final vault.</p>
+    </section>
+
+    <section class="grid">
+      <div>
+        <div class="reward-card">
+          <div class="stage-title">
+            <h3>Archive unlocked</h3>
+            <span class="stage-pill amber">Restricted file</span>
+          </div>
+          <p>The warning level is higher here. You made it past the first breach and into the archive.</p>
+        </div>
+        <div class="shakespeare-frame">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/470px-Shakespeare.jpg" alt="Portrait of William Shakespeare" />
+          <div class="shake-note">Shakespeare archive: picture recovered. Now crack the final vault clue.</div>
+        </div>
+      </div>
+
+      <div class="card" id="gateBox3">
+        <p class="small-kicker">Final stage</p>
+        <div class="stage-title">
+          <h2>Open final vault</h2>
+          <span class="stage-pill amber">New password needed</span>
+        </div>
+        <div class="hint-box">
+          <p class="small-kicker">Next clue</p>
+          <div class="hint-line">FRACTIONS + Q</div>
+          <p class="note">Use this to work out the final password, then enter it below.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="input-row">
+          <input id="passwordInput3" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 3" />
+          <button class="action" id="submitBtn3">Open final vault</button>
+        </div>
+        <div id="statusMsg3" class="status"></div>
+        <div class="note">Case does not matter.</div>
+      </div>
+    </section>
+  </main>
+  <script src="level2.js"></script>
+</body>
+</html>

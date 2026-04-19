@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Level 1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot">🟢</div><div>Access Level 1</div></div>
+      <div class="mini-actions">
+        <a class="link-btn" href="index.html">Back</a>
+      </div>
+    </div>
+
+    <section class="hero-card">
+      <span class="eyebrow">Stage cleared</span>
+      <h1 class="title">Access<br>Level 1</h1>
+      <p class="sub">You got in. Grab the reward, read the next clue, then enter a <strong>new password</strong> to continue to the archive.</p>
+    </section>
+
+    <section class="grid">
+      <div>
+        <div class="reward-card">
+          <div class="stage-title">
+            <h3>Reward unlocked</h3>
+            <span class="stage-pill green">Green breach</span>
+          </div>
+          <p>You cracked the first lock. Nice. Level 1 is open and the system is already glitching.</p>
+          <div class="reward-strip">
+            <div class="mini-pill">Access granted</div>
+            <div class="mini-pill">Level 1 clear</div>
+            <div class="mini-pill">Next clue ready</div>
+          </div>
+        </div>
+
+        <div class="dog-zone">
+          <p class="caption">Bonus reward // dancing dog</p>
+          <div class="dog-wrap">
+            <svg class="dancing-dog" viewBox="0 0 220 220" aria-hidden="true">
+              <g class="dog-all">
+                <circle cx="108" cy="110" r="52" fill="#9d6239"/>
+                <ellipse cx="108" cy="158" rx="54" ry="34" fill="#c57a44"/>
+                <ellipse class="ear-left" cx="74" cy="76" rx="16" ry="28" fill="#5a311c"/>
+                <ellipse class="ear-right" cx="144" cy="76" rx="16" ry="28" fill="#5a311c"/>
+                <ellipse cx="108" cy="112" rx="32" ry="26" fill="#f6d4ba"/>
+                <circle cx="92" cy="98" r="6" fill="#111"/>
+                <circle cx="126" cy="98" r="6" fill="#111"/>
+                <ellipse cx="109" cy="116" rx="10" ry="8" fill="#111"/>
+                <path d="M94 126 Q109 140 124 126" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+                <path class="paw-left" d="M72 154 q-18 16 -8 36" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
+                <path class="paw-right" d="M146 154 q18 16 8 36" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
+                <path d="M90 184 q-6 20 -2 32" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
+                <path d="M128 184 q6 20 2 32" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
+                <path d="M158 154 q20 0 24 16" fill="none" stroke="#5a311c" stroke-width="8" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <div class="disco-floor"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="gateBox2">
+        <p class="small-kicker">Next stage</p>
+        <div class="stage-title">
+          <h2>Open the archive</h2>
+          <span class="stage-pill green">New password needed</span>
+        </div>
+        <div class="hint-box">
+          <p class="small-kicker">Next clue</p>
+          <div class="hint-line">SHAKESPEARE + R</div>
+          <p class="note">Use this to work out the next password, then enter it below.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="input-row">
+          <input id="passwordInput2" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 2" />
+          <button class="action" id="submitBtn2">Open archive</button>
+        </div>
+        <div id="statusMsg2" class="status"></div>
+        <div class="note">Case does not matter.</div>
+      </div>
+    </section>
+  </main>
+  <script src="level1.js"></script>
+</body>
+</html>

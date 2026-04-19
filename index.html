@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operation Break-In</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="topbar">
+      <div class="brand"><div class="brand-dot">⌁</div><div>Operation Break-In</div></div>
+      <div class="mini-actions">
+        <button class="link-btn" id="resetMission">Reset mission</button>
+      </div>
+    </div>
+
+    <section class="hero-card">
+      <span class="eyebrow">You are the hackers</span>
+      <h1 class="title">Break into<br>the vault</h1>
+      <p class="sub">Decode the first password, type it in, and breach Access Level 1. After each unlock, the next stage gives you a new password clue.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="gateBox">
+        <p class="small-kicker">Stage 1</p>
+        <div class="stage-title">
+          <h2>Access Level 1</h2>
+          <span class="stage-pill green">Password 1 needed</span>
+        </div>
+        <p>Enter the first password to start the break-in.</p>
+        <div class="input-row">
+          <input id="passwordInput" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 1" />
+          <button class="action" id="submitBtn">Unlock</button>
+        </div>
+        <div id="statusMsg" class="status"></div>
+        <div class="note">Case does not matter. Uppercase, lowercase, or a capital first letter will all work.</div>
+      </div>
+
+      <div class="card">
+        <p class="small-kicker">Mission flow</p>
+        <h3>What happens next?</h3>
+        <div class="reward-strip">
+          <div class="mini-pill">Level 1 unlock</div>
+          <div class="mini-pill">Dog reward</div>
+          <div class="mini-pill">Shakespeare archive</div>
+          <div class="mini-pill">Final fractions vault</div>
+        </div>
+        <div class="hint-box">
+          <p class="small-kicker">Remember</p>
+          <p>Each new page needs a <strong>new password</strong> to continue.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

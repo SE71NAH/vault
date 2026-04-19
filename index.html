@@ -10,46 +10,45 @@
   <main class="container">
     <div class="topbar">
       <div class="brand"><div class="brand-dot">⌁</div><div>Operation Break-In</div></div>
-      <div class="mini-actions">
-        <button class="link-btn" id="resetMission">Reset mission</button>
-      </div>
+      <div class="mini-actions"><button class="link-btn" id="resetMission">Reset mission</button></div>
     </div>
 
     <section class="hero-card">
       <span class="eyebrow">You are the hackers</span>
       <h1 class="title">Break into<br>the vault</h1>
-      <p class="sub">Decode the first password, type it in, and breach Access Level 1. After each unlock, the next stage gives you a new password clue.</p>
+      <p class="sub">Use the number key to decode the first password. Enter it to open Access Level 1.</p>
     </section>
 
     <section class="grid">
       <div class="card" id="gateBox">
-        <p class="small-kicker">Stage 1</p>
+        <p class="small-kicker">Password 1 clue</p>
         <div class="stage-title">
-          <h2>Access Level 1</h2>
-          <span class="stage-pill green">Password 1 needed</span>
+          <h2>Access level 1</h2>
+          <span class="stage-pill green">New password needed</span>
         </div>
-        <p>Enter the first password to start the break-in.</p>
+        <div class="clue-code">25-1-18-4-12-5-25-19-16</div>
+        <div class="instructions">Decode the clue above using the key. Then type the password exactly how you think it should look. Capitals do not matter.</div>
         <div class="input-row">
           <input id="passwordInput" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 1" />
           <button class="action" id="submitBtn">Unlock</button>
         </div>
         <div id="statusMsg" class="status"></div>
-        <div class="note">Case does not matter. Uppercase, lowercase, or a capital first letter will all work.</div>
       </div>
 
-      <div class="card">
-        <p class="small-kicker">Mission flow</p>
-        <h3>What happens next?</h3>
-        <div class="reward-strip">
-          <div class="mini-pill">Level 1 unlock</div>
-          <div class="mini-pill">Dog reward</div>
-          <div class="mini-pill">Shakespeare archive</div>
-          <div class="mini-pill">Final fractions vault</div>
+      <div class="key-card">
+        <p class="small-kicker">Decoder key</p>
+        <h3>A = 1, B = 2 ... Z = 26</h3>
+        <p>Use this key on every stage. Match each number to a letter to reveal the password.</p>
+        <div class="key-grid">
+          <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
+          <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
+          <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
+          <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
+          <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
+          <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
+          <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
         </div>
-        <div class="hint-box">
-          <p class="small-kicker">Remember</p>
-          <p>Each new page needs a <strong>new password</strong> to continue.</p>
-        </div>
+        <div class="mission-tip">Tip: once a stage opens, scroll or move to the next password box and decode the next clue.</div>
       </div>
     </section>
   </main>

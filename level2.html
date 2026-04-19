@@ -10,50 +10,56 @@
   <main class="container">
     <div class="topbar">
       <div class="brand"><div class="brand-dot">🎭</div><div>Confidential Archive</div></div>
-      <div class="mini-actions">
-        <a class="link-btn" href="level1.html">Back</a>
-      </div>
+      <div class="mini-actions"><a class="link-btn" href="level1.html">Back</a></div>
     </div>
 
     <section class="hero-card">
-      <span class="eyebrow">Stage 2</span>
+      <span class="eyebrow">Stage 2 unlocked</span>
       <h1 class="title">Confidential<br>Archive</h1>
-      <p class="sub">You are deeper in. This archive is Shakespeare-themed. Take the clue, then enter a <strong>new password</strong> to open the final vault.</p>
+      <p class="sub">The Shakespeare archive is open. Decode the final password to breach the fractions vault.</p>
     </section>
 
     <section class="grid">
       <div>
-        <div class="reward-card">
+        <div class="portrait-card">
           <div class="stage-title">
-            <h3>Archive unlocked</h3>
+            <h3>Archive recovered</h3>
             <span class="stage-pill amber">Restricted file</span>
           </div>
-          <p>The warning level is higher here. You made it past the first breach and into the archive.</p>
-        </div>
-        <div class="shakespeare-frame">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/470px-Shakespeare.jpg" alt="Portrait of William Shakespeare" />
-          <div class="shake-note">Shakespeare archive: picture recovered. Now crack the final vault clue.</div>
+          <p>Recovered portrait file. Final vault clue is ready.</p>
+          <img class="shake-portrait" src="shakespeare.svg" alt="William Shakespeare portrait illustration" />
         </div>
       </div>
 
-      <div class="card" id="gateBox3">
-        <p class="small-kicker">Final stage</p>
-        <div class="stage-title">
-          <h2>Open final vault</h2>
-          <span class="stage-pill amber">New password needed</span>
+      <div>
+        <div class="card" id="gateBox3">
+          <p class="small-kicker">Password 3 clue</p>
+          <div class="stage-title">
+            <h2>Open final vault</h2>
+            <span class="stage-pill amber">New password needed</span>
+          </div>
+          <div class="clue-code">6-18-1-3-20-9-15-14-19-17</div>
+          <div class="instructions">Decode the clue above with the key. Enter the final password to unlock the vault.</div>
+          <div class="input-row">
+            <input id="passwordInput3" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 3" />
+            <button class="action" id="submitBtn3">Open final vault</button>
+          </div>
+          <div id="statusMsg3" class="status"></div>
         </div>
-        <div class="hint-box">
-          <p class="small-kicker">Next clue</p>
-          <div class="hint-line">FRACTIONS + Q</div>
-          <p class="note">Use this to work out the final password, then enter it below.</p>
+
+        <div class="key-card">
+          <p class="small-kicker">Decoder key</p>
+          <h3>A = 1, B = 2 ... Z = 26</h3>
+          <div class="key-grid">
+            <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
+            <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
+            <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
+            <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
+            <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
+            <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
+            <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
+          </div>
         </div>
-        <div class="divider"></div>
-        <div class="input-row">
-          <input id="passwordInput3" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 3" />
-          <button class="action" id="submitBtn3">Open final vault</button>
-        </div>
-        <div id="statusMsg3" class="status"></div>
-        <div class="note">Case does not matter.</div>
       </div>
     </section>
   </main>

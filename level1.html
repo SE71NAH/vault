@@ -10,34 +10,30 @@
   <main class="container">
     <div class="topbar">
       <div class="brand"><div class="brand-dot">🟢</div><div>Access Level 1</div></div>
-      <div class="mini-actions">
-        <a class="link-btn" href="index.html">Back</a>
-      </div>
+      <div class="mini-actions"><a class="link-btn" href="index.html">Back</a></div>
     </div>
 
     <section class="hero-card">
-      <span class="eyebrow">Stage cleared</span>
+      <span class="eyebrow">Stage 1 unlocked</span>
       <h1 class="title">Access<br>Level 1</h1>
-      <p class="sub">You got in. Grab the reward, read the next clue, then enter a <strong>new password</strong> to continue to the archive.</p>
+      <p class="sub">You broke through the first lock. Decode the next password to open the Shakespeare archive.</p>
     </section>
 
     <section class="grid">
       <div>
         <div class="reward-card">
           <div class="stage-title">
-            <h3>Reward unlocked</h3>
+            <h3>Level 1 clear</h3>
             <span class="stage-pill green">Green breach</span>
           </div>
-          <p>You cracked the first lock. Nice. Level 1 is open and the system is already glitching.</p>
+          <p>The system glows green. Nice work. The next stage is waiting.</p>
           <div class="reward-strip">
             <div class="mini-pill">Access granted</div>
-            <div class="mini-pill">Level 1 clear</div>
-            <div class="mini-pill">Next clue ready</div>
+            <div class="mini-pill">Stage 1 clear</div>
           </div>
         </div>
 
         <div class="dog-zone">
-          <p class="caption">Bonus reward // dancing dog</p>
           <div class="dog-wrap">
             <svg class="dancing-dog" viewBox="0 0 220 220" aria-hidden="true">
               <g class="dog-all">
@@ -62,24 +58,35 @@
         </div>
       </div>
 
-      <div class="card" id="gateBox2">
-        <p class="small-kicker">Next stage</p>
-        <div class="stage-title">
-          <h2>Open the archive</h2>
-          <span class="stage-pill green">New password needed</span>
+      <div>
+        <div class="card" id="gateBox2">
+          <p class="small-kicker">Password 2 clue</p>
+          <div class="stage-title">
+            <h2>Open archive</h2>
+            <span class="stage-pill green">New password needed</span>
+          </div>
+          <div class="clue-code">19-8-1-11-5-19-16-5-1-18-5-18</div>
+          <div class="instructions">Decode the clue above with the key. Enter the new password to continue.</div>
+          <div class="input-row">
+            <input id="passwordInput2" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 2" />
+            <button class="action" id="submitBtn2">Open archive</button>
+          </div>
+          <div id="statusMsg2" class="status"></div>
         </div>
-        <div class="hint-box">
-          <p class="small-kicker">Next clue</p>
-          <div class="hint-line">SHAKESPEARE + R</div>
-          <p class="note">Use this to work out the next password, then enter it below.</p>
+
+        <div class="key-card">
+          <p class="small-kicker">Decoder key</p>
+          <h3>A = 1, B = 2 ... Z = 26</h3>
+          <div class="key-grid">
+            <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
+            <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
+            <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
+            <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
+            <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
+            <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
+            <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
+          </div>
         </div>
-        <div class="divider"></div>
-        <div class="input-row">
-          <input id="passwordInput2" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 2" />
-          <button class="action" id="submitBtn2">Open archive</button>
-        </div>
-        <div id="statusMsg2" class="status"></div>
-        <div class="note">Case does not matter.</div>
       </div>
     </section>
   </main>

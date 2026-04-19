@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="William Shakespeare portrait illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#352014"/>
+      <stop offset="1" stop-color="#100d15"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="28" fill="url(#bg)"/>
+  <ellipse cx="210" cy="255" rx="135" ry="170" fill="#2f1b12"/>
+  <ellipse cx="210" cy="210" rx="96" ry="112" fill="#efd9bf"/>
+  <path d="M126 204c-16-72 20-116 43-126 6 42 30 67 41 76-28 7-54 24-84 50Z" fill="#5a3623"/>
+  <path d="M294 204c16-72-20-116-43-126-6 42-30 67-41 76 28 7 54 24 84 50Z" fill="#5a3623"/>
+  <path d="M154 168c18-52 46-86 56-94 12 16 40 46 57 94-20-13-43-20-57-20s-36 7-56 20Z" fill="#6b432d"/>
+  <ellipse cx="175" cy="213" rx="10" ry="7" fill="#1d1715"/>
+  <ellipse cx="245" cy="213" rx="10" ry="7" fill="#1d1715"/>
+  <path d="M188 276c14 10 30 10 44 0" fill="none" stroke="#1d1715" stroke-width="5" stroke-linecap="round"/>
+  <path d="M210 224v34" fill="none" stroke="#7d6858" stroke-width="6" stroke-linecap="round"/>
+  <path d="M172 286c20 18 32 23 38 23s18-5 38-23c-5 44-18 67-38 67s-33-23-38-67Z" fill="#5b341f"/>
+  <path d="M176 286c9 13 19 20 34 20s25-7 34-20" fill="none" stroke="#f4ebdf" stroke-width="3" opacity=".4"/>
+  <path d="M116 332c32-44 72-62 94-62 23 0 63 18 94 62" fill="#1d1515"/>
+  <path d="M86 352c24-56 88-100 124-100 37 0 101 44 124 100" fill="#f3f0ed"/>
+  <path d="M54 338c15-15 46-24 72-22 17 2 23 17 7 24-29 12-66 12-79-2Z" fill="#f3f0ed"/>
+  <path d="M366 338c-15-15-46-24-72-22-17 2-23 17-7 24 29 12 66 12 79-2Z" fill="#f3f0ed"/>
+  <rect x="135" y="356" width="150" height="126" rx="10" fill="#151c29"/>
+  <path d="M160 372h100l-17 96h-66l-17-96Z" fill="#10151f"/>
+  <text x="210" y="456" text-anchor="middle" fill="#e7d9b4" font-size="20" font-family="Georgia, serif" letter-spacing="2">SHAKESPEARE</text>
+</svg>

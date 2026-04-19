@@ -1,95 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Access Level 1</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Access Level 1</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <main class="container">
-    <div class="topbar">
-      <div class="brand"><div class="brand-dot">🟢</div><div>Access Level 1</div></div>
-      <div class="mini-actions"><a class="link-btn" href="index.html">Back</a></div>
-    </div>
-
-    <section class="hero-card">
-      <span class="eyebrow">Stage 1 unlocked</span>
-      <h1 class="title">Access<br>Level 1</h1>
-      <p class="sub">You broke through the first lock. Decode the next password to open the Shakespeare archive.</p>
-    </section>
-
-    <section class="grid">
-      <div>
-        <div class="reward-card">
-          <div class="stage-title">
-            <h3>Level 1 clear</h3>
-            <span class="stage-pill green">Green breach</span>
-          </div>
-          <p>The system glows green. Nice work. The next stage is waiting.</p>
-          <div class="reward-strip">
-            <div class="mini-pill">Access granted</div>
-            <div class="mini-pill">Stage 1 clear</div>
-          </div>
-        </div>
-
-        <div class="dog-zone">
-          <div class="dog-wrap">
-            <svg class="dancing-dog" viewBox="0 0 220 220" aria-hidden="true">
-              <g class="dog-all">
-                <circle cx="108" cy="110" r="52" fill="#9d6239"/>
-                <ellipse cx="108" cy="158" rx="54" ry="34" fill="#c57a44"/>
-                <ellipse class="ear-left" cx="74" cy="76" rx="16" ry="28" fill="#5a311c"/>
-                <ellipse class="ear-right" cx="144" cy="76" rx="16" ry="28" fill="#5a311c"/>
-                <ellipse cx="108" cy="112" rx="32" ry="26" fill="#f6d4ba"/>
-                <circle cx="92" cy="98" r="6" fill="#111"/>
-                <circle cx="126" cy="98" r="6" fill="#111"/>
-                <ellipse cx="109" cy="116" rx="10" ry="8" fill="#111"/>
-                <path d="M94 126 Q109 140 124 126" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
-                <path class="paw-left" d="M72 154 q-18 16 -8 36" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
-                <path class="paw-right" d="M146 154 q18 16 8 36" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
-                <path d="M90 184 q-6 20 -2 32" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
-                <path d="M128 184 q6 20 2 32" fill="none" stroke="#f6d4ba" stroke-width="12" stroke-linecap="round"/>
-                <path d="M158 154 q20 0 24 16" fill="none" stroke="#5a311c" stroke-width="8" stroke-linecap="round"/>
-              </g>
-            </svg>
-            <div class="disco-floor"></div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="card" id="gateBox2">
-          <p class="small-kicker">Password 2 clue</p>
-          <div class="stage-title">
-            <h2>Open archive</h2>
-            <span class="stage-pill green">New password needed</span>
-          </div>
-          <div class="clue-code">19-8-1-11-5-19-16-5-1-18-5-18</div>
-          <div class="instructions">Decode the clue above with the key. Enter the new password to continue.</div>
-          <div class="input-row">
-            <input id="passwordInput2" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 2" />
-            <button class="action" id="submitBtn2">Open archive</button>
-          </div>
-          <div id="statusMsg2" class="status"></div>
-        </div>
-
-        <div class="key-card">
-          <p class="small-kicker">Decoder key</p>
-          <h3>A = 1, B = 2 ... Z = 26</h3>
-          <div class="key-grid">
-            <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
-            <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
-            <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
-            <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
-            <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
-            <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
-            <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="level1.js"></script>
+<main class="container">
+<div class="topbar">
+<div class="brand"><div class="brand-dot">🟢</div><div>Access Level 1</div></div>
+<div class="mini-actions"><a class="link-btn" href="index.html">Back</a></div>
+</div>
+<section class="hero-card">
+<span class="eyebrow">Stage 1 unlocked</span>
+<h1 class="title">Access<br/>Level 1</h1>
+<p class="sub">You broke through the first lock. Decode the next password to continue.</p>
+</section>
+<section class="grid">
+<div>
+<div class="reward-card">
+<div class="stage-title">
+<h3>Level 1 clear</h3>
+<span class="stage-pill green">Green breach</span>
+</div>
+<p>The system glows green. Nice work. The next stage is waiting.</p>
+<div class="reward-strip">
+<div class="mini-pill">Access granted</div>
+<div class="mini-pill">Stage 1 clear</div>
+</div>
+</div>
+<div class="dog-zone">
+<div class="dog-wrap">
+<svg aria-hidden="true" class="dancing-dog" viewbox="0 0 220 220">
+<g class="dog-all">
+<circle cx="108" cy="110" fill="#9d6239" r="52"></circle>
+<ellipse cx="108" cy="158" fill="#c57a44" rx="54" ry="34"></ellipse>
+<ellipse class="ear-left" cx="74" cy="76" fill="#5a311c" rx="16" ry="28"></ellipse>
+<ellipse class="ear-right" cx="144" cy="76" fill="#5a311c" rx="16" ry="28"></ellipse>
+<ellipse cx="108" cy="112" fill="#f6d4ba" rx="32" ry="26"></ellipse>
+<circle cx="92" cy="98" fill="#111" r="6"></circle>
+<circle cx="126" cy="98" fill="#111" r="6"></circle>
+<ellipse cx="109" cy="116" fill="#111" rx="10" ry="8"></ellipse>
+<path d="M94 126 Q109 140 124 126" fill="none" stroke="#111" stroke-linecap="round" stroke-width="4"></path>
+<path class="paw-left" d="M72 154 q-18 16 -8 36" fill="none" stroke="#f6d4ba" stroke-linecap="round" stroke-width="12"></path>
+<path class="paw-right" d="M146 154 q18 16 8 36" fill="none" stroke="#f6d4ba" stroke-linecap="round" stroke-width="12"></path>
+<path d="M90 184 q-6 20 -2 32" fill="none" stroke="#f6d4ba" stroke-linecap="round" stroke-width="12"></path>
+<path d="M128 184 q6 20 2 32" fill="none" stroke="#f6d4ba" stroke-linecap="round" stroke-width="12"></path>
+<path d="M158 154 q20 0 24 16" fill="none" stroke="#5a311c" stroke-linecap="round" stroke-width="8"></path>
+</g>
+</svg>
+<div class="disco-floor"></div>
+</div>
+</div>
+</div>
+<div>
+<div class="card" id="gateBox2">
+<p class="small-kicker">Password 2 clue</p>
+<div class="stage-title">
+<h2>Open next stage</h2>
+<span class="stage-pill green">New password needed</span>
+</div>
+<div class="clue-code">19-8-1-11-5-19-16-5-1-18-5-18</div>
+<div class="instructions">Decode the clue above with the key. Enter the new password to continue.</div>
+<div class="input-row">
+<input autocomplete="off" id="passwordInput2" placeholder="Enter password 2" spellcheck="false" type="password"/>
+<button class="action" id="submitBtn2">Unlock next stage</button>
+</div>
+<div class="status" id="statusMsg2"></div>
+</div>
+<div class="key-card"><p class="small-kicker">Decoder key</p><h3>A = 1 to Z = 26</h3><div class="key-grid"><div class="key-cell">A = 1</div><div class="key-cell">B = 2</div><div class="key-cell">C = 3</div><div class="key-cell">D = 4</div><div class="key-cell">E = 5</div><div class="key-cell">F = 6</div><div class="key-cell">G = 7</div><div class="key-cell">H = 8</div><div class="key-cell">I = 9</div><div class="key-cell">J = 10</div><div class="key-cell">K = 11</div><div class="key-cell">L = 12</div><div class="key-cell">M = 13</div><div class="key-cell">N = 14</div><div class="key-cell">O = 15</div><div class="key-cell">P = 16</div><div class="key-cell">Q = 17</div><div class="key-cell">R = 18</div><div class="key-cell">S = 19</div><div class="key-cell">T = 20</div><div class="key-cell">U = 21</div><div class="key-cell">V = 22</div><div class="key-cell">W = 23</div><div class="key-cell">X = 24</div><div class="key-cell">Y = 25</div><div class="key-cell">Z = 26</div></div></div>
+</div>
+</section>
+</main>
+<script src="level1.js"></script>
 </body>
 </html>

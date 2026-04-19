@@ -1,57 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Operation Break-In</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Operation Break-In</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <main class="container">
-    <div class="topbar">
-      <div class="brand"><div class="brand-dot">⌁</div><div>Operation Break-In</div></div>
-      <div class="mini-actions"><button class="link-btn" id="resetMission">Reset mission</button></div>
-    </div>
-
-    <section class="hero-card">
-      <span class="eyebrow">You are the hackers</span>
-      <h1 class="title">Break into<br>the vault</h1>
-      <p class="sub">Use the number key to decode the first password. Enter it to open Access Level 1.</p>
-    </section>
-
-    <section class="grid">
-      <div class="card" id="gateBox">
-        <p class="small-kicker">Password 1 clue</p>
-        <div class="stage-title">
-          <h2>Access level 1</h2>
-          <span class="stage-pill green">New password needed</span>
-        </div>
-        <div class="clue-code">25-1-18-4-12-5-25-19-16</div>
-        <div class="instructions">Decode the clue above using the key. Then type the password exactly how you think it should look. Capitals do not matter.</div>
-        <div class="input-row">
-          <input id="passwordInput" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 1" />
-          <button class="action" id="submitBtn">Unlock</button>
-        </div>
-        <div id="statusMsg" class="status"></div>
-      </div>
-
-      <div class="key-card">
-        <p class="small-kicker">Decoder key</p>
-        <h3>A = 1, B = 2 ... Z = 26</h3>
-        <p>Use this key on every stage. Match each number to a letter to reveal the password.</p>
-        <div class="key-grid">
-          <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
-          <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
-          <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
-          <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
-          <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
-          <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
-          <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
-        </div>
-        <div class="mission-tip">Tip: once a stage opens, scroll or move to the next password box and decode the next clue.</div>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
+<main class="container">
+<div class="topbar">
+<div class="brand"><div class="brand-dot">⌁</div><div>Operation Break-In</div></div>
+<div class="mini-actions"><button class="link-btn" id="resetMission">Reset mission</button></div>
+</div>
+<section class="hero-card">
+<span class="eyebrow">You are the hackers</span>
+<h1 class="title">Break into<br/>the vault</h1>
+<p class="sub">Use the number key to decode the first password. Enter it to open Access Level 1.</p>
+</section>
+<section class="grid">
+<div class="card" id="gateBox">
+<p class="small-kicker">Password 1 clue</p>
+<div class="stage-title">
+<h2>Access level 1</h2>
+<span class="stage-pill green">New password needed</span>
+</div>
+<div class="clue-code">25-1-18-4-12-5-25-19-16</div>
+<div class="instructions">Decode the clue above using the key. Then type the password exactly how you think it should look. Capitals do not matter.</div>
+<div class="input-row">
+<input autocomplete="off" id="passwordInput" placeholder="Enter password 1" spellcheck="false" type="password"/>
+<button class="action" id="submitBtn">Unlock</button>
+</div>
+<div class="status" id="statusMsg"></div>
+</div>
+<div class="key-card"><p class="small-kicker">Decoder key</p><h3>A = 1 to Z = 26</h3><p>Use this key on every stage. Match each number to a letter to reveal the password.</p><div class="key-grid"><div class="key-cell">A = 1</div><div class="key-cell">B = 2</div><div class="key-cell">C = 3</div><div class="key-cell">D = 4</div><div class="key-cell">E = 5</div><div class="key-cell">F = 6</div><div class="key-cell">G = 7</div><div class="key-cell">H = 8</div><div class="key-cell">I = 9</div><div class="key-cell">J = 10</div><div class="key-cell">K = 11</div><div class="key-cell">L = 12</div><div class="key-cell">M = 13</div><div class="key-cell">N = 14</div><div class="key-cell">O = 15</div><div class="key-cell">P = 16</div><div class="key-cell">Q = 17</div><div class="key-cell">R = 18</div><div class="key-cell">S = 19</div><div class="key-cell">T = 20</div><div class="key-cell">U = 21</div><div class="key-cell">V = 22</div><div class="key-cell">W = 23</div><div class="key-cell">X = 24</div><div class="key-cell">Y = 25</div><div class="key-cell">Z = 26</div></div><div class="mission-tip">Tip: once a stage opens, scroll or move to the next password box and decode the next clue.</div></div>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

@@ -52,8 +52,7 @@ opacity:.22}
 .instructions{margin-top:10px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);font-size:11px;color:#d9e4f3}
 .key-card{margin-top:14px;background:var(--panel2)}
 .key-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
-.key-cell{padding:8px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);font-size:12px;text-align:center;font-weight:700;color:#eff6ff}
-.key-cell span{display:block;font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.08em;margin-top:2px}
+.key-cell{padding:10px 8px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);font-size:12px;text-align:center;font-weight:700;color:#eff6ff;line-height:1.25}
 .mission-tip{margin-top:10px;font-size:11px;color:#dce6f7}
 .reward-card{background:linear-gradient(180deg, rgba(7,25,17,.95), rgba(10,15,26,.92));border-color:rgba(83,255,154,.16)}
 .reward-strip{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}

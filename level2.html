@@ -1,68 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Confidential Archive</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Confidential Archive</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <main class="container">
-    <div class="topbar">
-      <div class="brand"><div class="brand-dot">🎭</div><div>Confidential Archive</div></div>
-      <div class="mini-actions"><a class="link-btn" href="level1.html">Back</a></div>
-    </div>
-
-    <section class="hero-card">
-      <span class="eyebrow">Stage 2 unlocked</span>
-      <h1 class="title">Confidential<br>Archive</h1>
-      <p class="sub">The Shakespeare archive is open. Decode the final password to breach the fractions vault.</p>
-    </section>
-
-    <section class="grid">
-      <div>
-        <div class="portrait-card">
-          <div class="stage-title">
-            <h3>Archive recovered</h3>
-            <span class="stage-pill amber">Restricted file</span>
-          </div>
-          <p>Recovered portrait file. Final vault clue is ready.</p>
-          <img class="shake-portrait" src="shakespeare.svg" alt="William Shakespeare portrait illustration" />
-        </div>
-      </div>
-
-      <div>
-        <div class="card" id="gateBox3">
-          <p class="small-kicker">Password 3 clue</p>
-          <div class="stage-title">
-            <h2>Open final vault</h2>
-            <span class="stage-pill amber">New password needed</span>
-          </div>
-          <div class="clue-code">6-18-1-3-20-9-15-14-19-17</div>
-          <div class="instructions">Decode the clue above with the key. Enter the final password to unlock the vault.</div>
-          <div class="input-row">
-            <input id="passwordInput3" type="password" autocomplete="off" spellcheck="false" placeholder="Enter password 3" />
-            <button class="action" id="submitBtn3">Open final vault</button>
-          </div>
-          <div id="statusMsg3" class="status"></div>
-        </div>
-
-        <div class="key-card">
-          <p class="small-kicker">Decoder key</p>
-          <h3>A = 1, B = 2 ... Z = 26</h3>
-          <div class="key-grid">
-            <div class="key-cell">A<span>1</span></div><div class="key-cell">B<span>2</span></div><div class="key-cell">C<span>3</span></div><div class="key-cell">D<span>4</span></div>
-            <div class="key-cell">E<span>5</span></div><div class="key-cell">F<span>6</span></div><div class="key-cell">G<span>7</span></div><div class="key-cell">H<span>8</span></div>
-            <div class="key-cell">I<span>9</span></div><div class="key-cell">J<span>10</span></div><div class="key-cell">K<span>11</span></div><div class="key-cell">L<span>12</span></div>
-            <div class="key-cell">M<span>13</span></div><div class="key-cell">N<span>14</span></div><div class="key-cell">O<span>15</span></div><div class="key-cell">P<span>16</span></div>
-            <div class="key-cell">Q<span>17</span></div><div class="key-cell">R<span>18</span></div><div class="key-cell">S<span>19</span></div><div class="key-cell">T<span>20</span></div>
-            <div class="key-cell">U<span>21</span></div><div class="key-cell">V<span>22</span></div><div class="key-cell">W<span>23</span></div><div class="key-cell">X<span>24</span></div>
-            <div class="key-cell">Y<span>25</span></div><div class="key-cell">Z<span>26</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="level2.js"></script>
+<main class="container">
+<div class="topbar">
+<div class="brand"><div class="brand-dot">🎭</div><div>Confidential Archive</div></div>
+<div class="mini-actions"><a class="link-btn" href="level1.html">Back</a></div>
+</div>
+<section class="hero-card">
+<span class="eyebrow">Stage 2 unlocked</span>
+<h1 class="title">Confidential<br/>Archive</h1>
+<p class="sub">The Shakespeare archive is open. Decode the final password to breach the fractions vault.</p>
+</section>
+<section class="grid">
+<div>
+<div class="portrait-card">
+<div class="stage-title">
+<h3>Archive recovered</h3>
+<span class="stage-pill amber">Restricted file</span>
+</div>
+<p>Recovered portrait file. Final vault clue is ready.</p>
+<img alt="William Shakespeare portrait illustration" class="shake-portrait" src="shakespeare.svg"/>
+</div>
+</div>
+<div>
+<div class="card" id="gateBox3">
+<p class="small-kicker">Password 3 clue</p>
+<div class="stage-title">
+<h2>Open final vault</h2>
+<span class="stage-pill amber">New password needed</span>
+</div>
+<div class="clue-code">6-18-1-3-20-9-15-14-19-17</div>
+<div class="instructions">Decode the clue above with the key. Enter the final password to unlock the vault.</div>
+<div class="input-row">
+<input autocomplete="off" id="passwordInput3" placeholder="Enter password 3" spellcheck="false" type="password"/>
+<button class="action" id="submitBtn3">Open final vault</button>
+</div>
+<div class="status" id="statusMsg3"></div>
+</div>
+<div class="key-card"><p class="small-kicker">Decoder key</p><h3>A = 1 to Z = 26</h3><div class="key-grid"><div class="key-cell">A = 1</div><div class="key-cell">B = 2</div><div class="key-cell">C = 3</div><div class="key-cell">D = 4</div><div class="key-cell">E = 5</div><div class="key-cell">F = 6</div><div class="key-cell">G = 7</div><div class="key-cell">H = 8</div><div class="key-cell">I = 9</div><div class="key-cell">J = 10</div><div class="key-cell">K = 11</div><div class="key-cell">L = 12</div><div class="key-cell">M = 13</div><div class="key-cell">N = 14</div><div class="key-cell">O = 15</div><div class="key-cell">P = 16</div><div class="key-cell">Q = 17</div><div class="key-cell">R = 18</div><div class="key-cell">S = 19</div><div class="key-cell">T = 20</div><div class="key-cell">U = 21</div><div class="key-cell">V = 22</div><div class="key-cell">W = 23</div><div class="key-cell">X = 24</div><div class="key-cell">Y = 25</div><div class="key-cell">Z = 26</div></div></div>
+</div>
+</section>
+</main>
+<script src="level2.js"></script>
 </body>
 </html>
